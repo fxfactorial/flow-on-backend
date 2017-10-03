@@ -1,0 +1,20 @@
+{
+  "name": "flowprac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tc": "flow status",
+    "watch-flow": "nodemon -w src -x 'flow check || exit 0'",
+    "build": "babel src --watch --out-dir lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "flow-bin": "^0.56.0",
+    "flow-typed": "^2.1.5",
+    "nodemon": "^1.12.1"
+  }
+}
